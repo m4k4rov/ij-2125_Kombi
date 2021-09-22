@@ -9,8 +9,8 @@ btns.forEach((item, indexbtn) => {
         item.classList.toggle('feature__link_active');
 
         lists.forEach((item, index) => {
-            if (index!=indexbtn) item.classList.add('hidden');
+            if (index!=indexbtn) item.classList.add('hiddenAcc');
         });
-        lists[indexbtn].classList.toggle('hidden');
+        lists[indexbtn].classList.toggle('hiddenAcc');
     })
 })

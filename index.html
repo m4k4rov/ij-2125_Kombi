@@ -10,6 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="./js/accordion.js" defer></script>
+	<script src="./js/smoothScroll.js" defer></script>
+	<script src="./js/tabs.js" defer></script>
+	<script src="./js/modalvideo.js" defer></script>
 </head>
 
 <body>
@@ -76,11 +79,13 @@
 				</div>
 				<!-- /.offer -->
 				<div class="main-img">
-					<a href="https://www.youtube.com/watch?v=w7doL2EpxX0" class="play">
+					<!--<a href="https://www.youtube.com/watch?v=BTkCfdhIggc" class="play">
 
 						Смотреть видео
-					</a>
-
+					</a>-->
+					<button class="play">
+						Смотреть видео
+					</button>
 				</div>
 			</div>
 			<!-- /.main-wrapper -->
@@ -107,7 +112,7 @@
 						<ul class="design-list">
 							<li>
 								<button type="button" class="design-list__item design-list__item_active"
-									data-tabs-handler="interior" data-some-attr="attr">Дизайн салона</button>
+									data-tabs-handler="interior">Дизайн салона</button>
 							</li>
 							<li>
 								<button type="button" class="design-list__item" data-tabs-handler="body">Дизайн
@@ -221,7 +226,7 @@
 									</span>
 								</div>
 							</button>
-							<ul class="feature-sub hidden">
+							<ul class="feature-sub hiddenAcc">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Двигатель
@@ -256,7 +261,7 @@
 									</span>
 								</div>
 							</button>
-							<ul class="feature-sub hidden">
+							<ul class="feature-sub hiddenAcc">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Независимая, пружинно-рычажная передняя подвеска
@@ -299,7 +304,7 @@
 									</span>
 								</div>
 							</button>
-							<ul class="feature-sub hidden">
+							<ul class="feature-sub hiddenAcc">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Оригинальная облицовка радиатора
@@ -409,6 +414,15 @@
 		</div>
 	</div>
 	<!-- modal (end) -->
+
+	<!-- videomodal (start) -->
+	<div id="videoModal" class="videomodal">
+		<div class="videomodal-content">
+			<div class="videoclose">&times;</div>
+			<iframe width="560px" height="315px" src="https://www.youtube.com/embed/BTkCfdhIggc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!-- videomodal (end) -->
 </body>
 
 </html>
