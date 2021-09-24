@@ -16,6 +16,7 @@
 	<script src="./js/modalvideo.js" defer></script>
 	<script src="./js/modal.js" defer></script>
 	<script src="./js/burger.js" defer></script>
+	<script src="./js/sendForm.js" defer></script>
 </head>
 </head>
 
@@ -375,9 +376,9 @@
 						удобное для вас время
 					</p>
 					<form class="form form-test-drive">
-						<input type="text" class="input" name="name" placeholder="Имя">
-						<input type="mail" class="input" name="mail" placeholder="Электронная почта">
-						<input type="text" class="input" name="phone" placeholder="Телефон">
+						<input type="text" class="input" name="name" placeholder="Имя" required pattern="\D[^\s]+$">
+						<input type="email" class="input" name="mail" placeholder="Электронная почта" required pattern="\D[^\s]+$">
+						<input type="text" class="input" name="phone" placeholder="Телефон" required pattern="\D[^\s]+$">
 						<button type="submit" class="button form__button">
 							Отправить
 						</button>
