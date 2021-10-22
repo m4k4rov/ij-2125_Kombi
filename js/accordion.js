@@ -1,4 +1,5 @@
-const btns = document.querySelectorAll('.feature__link');
+function accordion () {
+    const btns = document.querySelectorAll('.feature__link');
 const lists = document.querySelectorAll('.feature-sub');
 
 btns.forEach((item, indexbtn) => {
@@ -14,3 +15,5 @@ btns.forEach((item, indexbtn) => {
         lists[indexbtn].classList.toggle('hiddenAcc');
     })
 })
+};
+export default accordion;
